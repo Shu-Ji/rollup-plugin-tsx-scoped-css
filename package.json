@@ -1,6 +1,6 @@
 {
     "name": "rollup-plugin-tsx-scoped-css",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "keyword": "rollup-plugin vite-plugin",
     "license": "MIT",
     "repository": "https://github.com/Shu-Ji/rollup-plugin-tsx-scoped-css",

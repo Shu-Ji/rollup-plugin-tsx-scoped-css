@@ -9,7 +9,7 @@
         "outDir": "dist",
         "strict": true,
         "target": "esnext",
-        "module": "esnext",
+        "module": "UMD",
         "esModuleInterop": true
     },
     "include": [
