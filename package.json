@@ -1,0 +1,23 @@
+{
+    "name": "rollup-plugin-tsx-scoped-css",
+    "version": "1.0.2",
+    "keyword": "rollup-plugin vite-plugin",
+    "license": "MIT",
+    "repository": "https://github.com/Shu-Ji/rollup-plugin-tsx-scoped-css",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "rimraf dist && tsc -p . --outDir dist"
+    },
+    "dependencies": {
+        "@vue/component-compiler-utils": "^3.2.0",
+        "ts-morph": "^9.1.0",
+        "vite": "^2.0.1"
+    },
+    "devDependencies": {
+        "typescript": "^4.1.5",
+        "rimraf": "^3.0.2"
+    }
+}
