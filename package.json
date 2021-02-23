@@ -1,6 +1,6 @@
 {
     "name": "rollup-plugin-tsx-scoped-css",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keyword": "rollup-plugin vite-plugin",
     "license": "MIT",
     "repository": "https://github.com/Shu-Ji/rollup-plugin-tsx-scoped-css",
@@ -9,7 +9,7 @@
     ],
     "main": "dist/index.js",
     "scripts": {
-        "build": "rimraf dist && tsc -p . --outDir dist",
+        "build": "rimraf dist && tsc -p .",
         "pub": "npm publish"
     },
     "dependencies": {

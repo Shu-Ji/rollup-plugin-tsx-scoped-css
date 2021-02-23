@@ -1,7 +1,7 @@
 import {compileStyle} from '@vue/component-compiler-utils';
-import * as fs from 'fs';
-import * as md5 from 'md5';
-import * as path from 'path';
+import fs from 'fs';
+import md5 from 'md5';
+import path from 'path';
 import {Project, SyntaxKind} from 'ts-morph';
 import {Plugin} from 'vite';
 
