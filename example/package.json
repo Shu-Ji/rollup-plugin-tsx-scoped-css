@@ -1,5 +1,5 @@
 {
-    "name": "vite-plugin-react-scoped-css-example",
+    "name": "rollup-plugin-tsx-scoped-css-example",
     "version": "0.0.0",
     "scripts": {
         "dev": "vite",

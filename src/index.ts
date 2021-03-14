@@ -15,7 +15,7 @@ const project = new Project({
 
 const hash_cache = {} as Record<string, string>;
 
-export default function(raw_options: Options = {}): Plugin {
+export default function (raw_options: Options = {}): Plugin {
     const options = {
         isScopedCssFile,
         ...raw_options.isScopedCssFile,
