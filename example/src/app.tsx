@@ -8,20 +8,22 @@ function App() {
     const cls = 'btn'
 
     return (
-        <div className="app">
-            <div className="header">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    {count}
-                    {(() => {
-                        return <div className={'inner' + cls}>
-                            <p className={cls}>第一个</p>
-                        </div>
-                    })()}
-                </button>
+        <React.Fragment>
+            <div className="app">
+                <div className="header">
+                    <button onClick={() => setCount((count) => count + 1)}>
+                        {count}
+                        {(() => {
+                            return <div className={'inner' + cls}>
+                                <p className={cls}>第一个</p>
+                            </div>
+                        })()}
+                    </button>
 
-                <Home/>
+                    <Home/>
+                </div>
             </div>
-        </div>
+        </React.Fragment>
     )
 }
 

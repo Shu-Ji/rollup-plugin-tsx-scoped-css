@@ -2,7 +2,7 @@ import {compileStyle} from '@vue/component-compiler-utils';
 import fs from 'fs';
 import md5 from 'md5';
 import path from 'path';
-import {Project, SyntaxKind} from 'ts-morph';
+import {Project, Node, SyntaxKind} from 'ts-morph';
 import {Plugin} from 'vite';
 
 export interface Options {
@@ -114,11 +114,13 @@ function handleTsxFile(
 
     // 遍历每一个 jsx 元素
     const hash_attrs = hashes.map(hash => `data-v-${hash}`);
-    jsx_elements.forEach(jsx_element => {
-        hash_attrs.forEach(hash => {
-            jsx_element.addAttribute({name: hash, initializer: '""'});
+    jsx_elements
+        .filter((jsx_element => jsx_element.getFullText().trim() !== '<React.Fragment>'))
+        .forEach((jsx_element: Node) => {
+            hash_attrs.forEach(hash => {
+                jsx_element.addAttribute({name: hash, initializer: '""'});
+            });
         });
-    });
 
     const result_code = file.getFullText();
     project.removeSourceFile(file);
